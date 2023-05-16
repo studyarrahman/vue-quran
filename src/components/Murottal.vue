@@ -2,7 +2,7 @@
   <div class="container" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWXV343gU3nF1ghxN32TKnB8mmF13xsUmGQ&usqp=CAU'); background-size: cover; background-position: center;">
     <div class="row mt-1 justify-content-center">
         <div class="col-md-8">
-            <img src="../assets/kaligrafi_quran.png" alt="Kaligrafi" width="130" class="mb-4 mt-2">
+            <img src="../assets/kaligrafi_quran.png" alt="Kaligrafi" width="130" class="mb-3 mt-5">
             <h2 class="text-center">Search Murottal</h2>
             <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Masukkan Nomor Surah..." aria-label="Recipient's username" aria-describedby="button-addon2" v-model="searchQuery" @input="getListMurottal">
