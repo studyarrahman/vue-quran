@@ -5,7 +5,7 @@
             <img src="../assets/kaligrafi_quran.png" alt="Kaligrafi" width="130" class="mb-3 mt-5">
             <h2 class="text-center">Search Murottal</h2>
             <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Masukkan Nomor Surah... (contoh: al-fatihah)" aria-label="Recipient's username" aria-describedby="button-addon2" v-model="searchQuery" @input="getListMurottal">
+            <input type="text" class="form-control" placeholder="Masukkan Nomor Surah..." aria-label="Recipient's username" aria-describedby="button-addon2" v-model="searchQuery" @input="getListMurottal">
             <button class="btn btn-dark" type="button" id="search-button">Search</button>
             </div>
         </div>
