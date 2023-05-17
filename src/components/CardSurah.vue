@@ -84,28 +84,23 @@ li{
 }
 
 .surah_id {
-
     border: 1px solid black;
     background-image: linear-gradient(to bottom right, #f5f5f5, #d5d5c1);
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
     width: 2.375rem;
     height: 2.375rem;
     margin-bottom: 1rem;
-    margin-left: 4.5rem;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
     transform: rotate(45deg);
 }
 
-.nomor{
-    transform: rotate(315deg );
-    place-items: center;
+.nomor {
+    transform: rotate(315deg);
+    text-align: center;
 }
 </style>
 
