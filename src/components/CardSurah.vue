@@ -62,11 +62,13 @@ computed: {
         <div class="card m-4 shadow p-3 mb-5 bg-body rounded text-center"
         style="width: 15rem; background-color: #f5f5f5; background-image: linear-gradient(to bottom right, #f5f5f5, #d5d5c1);" v-for="item in filteredListSurah">
             <div class="card-body">
+            <div class="surah_id">
+                    <span class="nomor">{{ item.id }}</span>
+                </div>
             <h5 class="card-title">{{ item.name_simple }} - {{ item.name_arabic }}</h5>
             <h6 class="card-text" style="opacity: 0.6; color: #000;">{{ item.translated_name.name }}</h6>
             <hr>
             <p class="card-text">Jumlah Ayat: {{ item.verses_count }}</p>
-            <p class="card-text">Nomor Surah: {{ item.id }}</p>
             <router-link :to="{name: 'surah', params: {id: item.id}}"
             class="btn btn-primary"
             style="background-color: #2E3440; border-color: #2E3440; color: #FFFFFF;">Baca</router-link>
@@ -79,6 +81,31 @@ computed: {
 <style>
 li{
     list-style: none;
+}
+
+.surah_id {
+
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom right, #f5f5f5, #d5d5c1);
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-items: center;
+    width: 2.375rem;
+    height: 2.375rem;
+    margin-bottom: 1rem;
+    margin-left: 4.5rem;
+    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transform: rotate(45deg);
+}
+
+.nomor{
+    transform: rotate(315deg );
+    place-items: center;
 }
 </style>
 
