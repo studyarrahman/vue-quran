@@ -48,7 +48,7 @@ export default {
   methods: {
     getListMurottal() {
       axios
-        .get(`https://api.quran.com/api/v4/chapter_recitations/1?language=id`)
+        .get(`https://api.quran.com/api/v4/chapter_recitations/7?language=id`)
         .then((response) => {
           console.log(response);
           this.Murottal = response.data.audio_files;
